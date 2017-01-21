@@ -4,7 +4,7 @@ function build_query_convenience($desc) {
     $invalid_convenience_names = array(
         'セブンイレブン', '7', '[Ss]even', 'セブン・イレブン',
         '[Ll]awson', 'LAWSON',
-        'Family',
+        '[Ff]amily',
         'Mini Stop', 'MINI STOP', '[Mm]ini[Ss]top', 'Mini-Stop',
         '[Cc]ircle',
         '[Ss]unkus', 'Thankusu', 'SUNKUS',
