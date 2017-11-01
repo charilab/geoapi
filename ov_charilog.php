@@ -49,6 +49,10 @@ function get_nodes($kind, $desc) {
         $query = sprintf("node(%s)[tourism=viewpoint];out;", $desc);
         $nodes = call_overpass($query);
         break;
+    case "bus_stop":
+        $query = sprintf("node(%s)[highway=bus_stop];out;", $desc);
+        $nodes = call_overpass($query);
+        break;
     default:
         $nodes = null;
     }
