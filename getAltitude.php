@@ -27,7 +27,7 @@ foreach($results as $p) {
 }
 
 echo <<< EOM
-{
+[{
     "name": "Altitude information",
     "type": "FeatureCollection",
     "features": [{
@@ -36,8 +36,15 @@ echo <<< EOM
             "type": "LineString",
             "coordinates": [ {$coords} ]
         },
-        "properties": null
-    }]
-}
+        "properties": {
+            "attributeType": 0
+        }
+    }],
+    "properties": {
+        "Creator": "charilab.sakura.ne.jp",
+        "records": 1,
+        "summary": "steepness"
+    }
+}]
 EOM;
 ?>
